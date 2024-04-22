@@ -3,6 +3,7 @@ nav:
   - 主页:
     - index.md
     - 课程模版: template.md
+    - 贡献指南: manual.md
   - 通识课:
     - 介绍: general/index.md 
   - 数理基础课:
