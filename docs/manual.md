@@ -72,10 +72,12 @@ mkdocs serve
 # 项目规划
 ```
 general: 通识课
+outer: 外专业选修课
 basic: 数理基础课
 culture：文化素质课
 major：CS 专业类课程
 labs：学校各个实验室的技术栈介绍和项目（包括老师的实验室）
+competition: 计算机相关的各个比赛的介绍
 salon：俱乐部可公开的分享会文档
 CTF-WP：俱乐部参加的CTF比赛题解
 ```
