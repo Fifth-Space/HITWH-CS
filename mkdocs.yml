@@ -1,11 +1,11 @@
-site_name: 哈V 计算机学习指南
+site_name: HITWH-CS
 nav:
   - 主页:
     - index.md
     - 课程模版: template.md
-  - 通识课:
-    - general/index.md 
-    - 通识核心课: general/core.md
+  #- 通识课:
+  #  - general/index.md 
+  #  - 通识核心课: general/core.md
 
 
 
