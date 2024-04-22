@@ -1,0 +1,29 @@
+site_name: 哈V 计算机学习指南
+theme:
+  name: 'material'
+  language: 'zh'
+  # logo: images/icon.png
+  icon:
+    logo: material/notebook-outline
+    repo: fontawesome/brands/github
+    edit: material/pencil
+  #custom_dir: overrides
+  favicon: images/icon.png
+  features:
+    - content.code.annotate
+    - content.action.edit
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+  font:
+    # text: Noto Serif SC
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+
+nav:
+  - 主页:
+    - index.md
