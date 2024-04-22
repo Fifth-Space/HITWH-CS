@@ -1,7 +1,6 @@
 .badges {
   margin-top: -2em;
 }
-
 .badge {
   display: inline-block;
   padding: 0.2em 0.4em;
@@ -12,7 +11,18 @@
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: 0.25rem;
+  opacity: 0.6; /* 默认透明度为75% */
+  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
 }
+
+.badge:hover {
+  opacity: 1; /* 鼠标悬停时不透明 */
+  transform: scale(1.05);
+}
+
 .is-badge, .labor-badge {
   background-color: #FF862F;
   color: #161616;
@@ -25,8 +35,18 @@
   background-color: #FC6255;
   color: #161616;
 }
+.se-badge, .cross-badge {
+  background-color: #47ff47;
+  color: #161616;
+}
+.dx-badge, .cross-badge {
+  background-color: #f386ff;
+  color: #161616;
+}
 [data-md-color-scheme="default"] .is-badge,
 [data-md-color-scheme="default"] .cs-badge,
-[data-md-color-scheme="default"] .ai-badge {
+[data-md-color-scheme="default"] .ai-badge,
+[data-md-color-scheme="default"] .se-badge,
+[data-md-color-scheme="default"] .dx-badge {
   color: #FFFFFF;
 }
