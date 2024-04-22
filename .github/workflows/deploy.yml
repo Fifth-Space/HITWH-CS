@@ -18,8 +18,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Install TuringPlugins
         run: |
-          git clone https://github.com/wandering-the-earth/mdPlugins.git
-          cd mdPlugins
+          git clone https://github.com/Fifth-Space/mkdocs_plugins.git
+          cd mkdocs_plugins
           pip install -e .
           cd ..
       - run: mkdocs gh-deploy --force
