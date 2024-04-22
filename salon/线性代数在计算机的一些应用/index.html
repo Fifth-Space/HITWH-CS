@@ -1977,7 +1977,7 @@ $$
 <h5 id="_17">斐波那契数列<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h5>
 <p>但是还是先温习一下斐波那契数列怎么用矩阵加速求的，刚才计算机图形学的东西希望还没有忘干净
 $$
-\begin{bmatrix}F_{n-1} &amp; F_{n-2}\end{bmatrix}\begin{bmatrix}1&amp;1\1&amp;0\end{bmatrix} = \begin{bmatrix}F_{n} &amp; F_{n-1}\end{bmatrix}
+\begin{bmatrix}F_{n-1} &amp; F_{n-2}\end{bmatrix}\begin{bmatrix}1&amp;1\\1&amp;0\end{bmatrix} = \begin{bmatrix}F_{n} &amp; F_{n-1}\end{bmatrix}
 $$
 定义初始矩阵  <span class="arithmatex">\(\text{ans} = \begin{bmatrix}F_2 &amp; F_1\end{bmatrix} = \begin{bmatrix}1 &amp; 1\end{bmatrix}, \text{base} = \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}。那么，F_n 就等于 \text{ans} \text{base}^{n-2}\)</span> 这个矩阵的第一行第一列元素，也就是  <span class="arithmatex">\(\begin{bmatrix}1 &amp; 1\end{bmatrix} \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}^{n-2}\)</span>的第一行第一列元素。
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000000007</span><span class="p">;</span>
