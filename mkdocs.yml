@@ -1,4 +1,14 @@
 site_name: 哈V 计算机学习指南
+nav:
+  - 主页:
+    - index.md
+    - 课程模版: template.md
+  - 通识课:
+    - general/index.md 
+    - 通识核心课: general/core.md
+
+
+
 theme:
   name: 'material'
   language: 'zh'
@@ -24,6 +34,34 @@ theme:
   palette:
     - scheme: default
 
-nav:
-  - 主页:
-    - index.md
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - meta
+  - def_list
+  - attr_list
+  - md_in_html
+  - sane_lists
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+    
