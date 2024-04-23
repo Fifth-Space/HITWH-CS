@@ -124,7 +124,21 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
     
   
 </form>
@@ -3257,7 +3271,7 @@
 <p>通过<strong>两次</strong> PR（即 Pull Request）的形式来进行贡献，具体流程：</p>
 <ul>
 <li>
-<p>在 GitHub 网页端点击右上角的 fork，将本仓库 fork 到自己的账号下</p>
+<p>在 GitHub 网页端点击右上角的 fork，将本仓库的 <strong>main</strong> 分支 fork 到自己的账号下</p>
 </li>
 <li>
 <p>在自己账号的对应仓库中进行修改（提交方式参见git使用）</p>
@@ -3275,6 +3289,7 @@
 <blockquote>
 <p>第一次提交占一下mkdocs.yml的坑位，这样避免merge冲突</p>
 <p>第二次提交就在docs提交你的markdown</p>
+<p>请务必确认分支正确</p>
 </blockquote>
 <p><img alt="image.png" src="https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221056918.png" /></p>
 <p><img alt="image.png" src="https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221057922.png" /></p>
