@@ -22,6 +22,7 @@
 ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221025576.png)
 `general` 目录对应新增的核心课的所有内容，一个版块一个目录，方便维护，下面是`general` 目录的内容
 ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221029520.png)
+
 ## 贡献指南
 本网站欢迎一切贡献 
 不过课程内容只面向HITWH的课程内容范围，如果你想要为本网站进行贡献，以下是一些指南。
@@ -62,15 +63,30 @@ mkdocs serve
 - 尽量规范编写 markdown，避免出现格式错误，**先在自己的本地进行测试！**
 
 ## 贡献方式
-通过 PR（即 Pull Request）的形式来进行贡献，具体流程：
+
+==务必查看以下内容，避免协作者冲突==
+
+通过**两次** PR（即 Pull Request）的形式来进行贡献，具体流程：
 
 - 在 GitHub 网页端点击右上角的 fork，将本仓库 fork 到自己的账号下
+
 - 在自己账号的对应仓库中进行修改（提交方式参见git使用）
-- 修改完成后，在自己的仓库内Pull requests中 点击 New pull request，创建一个 PR
-![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221056918.png)
-- 填写详细的更新内容，然后提交 PR
+
+- 开始你的工作时，将计划的页面写入mkdocs.yml中，提交到个人仓库的fork
+
+- 修改完成后，在自己的仓库内Pull requests中 点击 New pull request，创建一个 PR，**并说明提交的yml文件的修改内容**（第一次提交）
+
+- 然后开始具体的工作，在结束时提交新的的docs内容，同样创建pull request，**说明提交的docs文件的内容**（第二次提交）
+
+  > 第一次提交占一下mkdocs.yml的坑位，这样避免merge冲突
+  >
+  > 第二次提交就在docs提交你的markdown
+
+  ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221056918.png)
+
 ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221057922.png)
-- 等待管理员的审核、修改，然后合并到本 repo 中
+
+- 等待管理员的审核、修改，然后合并到本 repo 中，如必要将会联系提交者
 
 ## 项目规划
 ```
