@@ -1,19 +1,85 @@
 site_name: HITWH-CS
 nav:
   - 主页:
-    - index.md
-    - 课程模版: template.md
-    - 贡献指南: manual.md
+      - 项目介绍: index.md
+      - 课程模版: template.md
+      - 贡献指南: manual.md
   - 通识课:
     - 介绍: general/index.md 
   - 外专业选修课:
     - 介绍: outer/index.md
   - 数理基础课:
-    - 介绍: basic/index.md
+      - 介绍: basic/index.md
   - 文化素质课:
-    - 介绍: culture/index.md
+      - 介绍: culture/index.md
+      - 文史哲经典与世界文明:
+          - 中国当代文学作品选读: culture/文史哲经典与世界文明/1.md
+          - 美学与美的欣赏: culture/文史哲经典与世界文明/2.md
+          - 唐宋词经典导读: culture/文史哲经典与世界文明/3.md
+          - 中国古代文学简史: culture/文史哲经典与世界文明/4.md
+          - 生态哲学: culture/文史哲经典与世界文明/5.md
+          - 奥林匹克运动: culture/文史哲经典与世界文明/6.md
+          - 西方古典美学: culture/文史哲经典与世界文明/7.md
+          - 逻辑学入门: culture/文史哲经典与世界文明/8.md
+          - 科幻电影赏析: culture/文史哲经典与世界文明/9.md
+      - 实用知识与技能:
+          - 大学生实用礼仪: culture/实用知识与技能/1.md
+          - 主持艺术技巧: culture/实用知识与技能/2.md
+          - 摄影基础及应用: culture/实用知识与技能/3.md
+          - 汉字书写解码: culture/实用知识与技能/4.md
+          - 中华传统香文化: culture/实用知识与技能/5.md
+          - 演说的艺术: culture/实用知识与技能/6.md
+          - 个人理财基础知识和技术: culture/实用知识与技能/7.md
+          - 做自己的健康管理师: culture/实用知识与技能/8.md
+          - 流行音乐演唱: culture/实用知识与技能/9.md
+          - 《绽放最好的自己-----大学生沟通能力提升训练》: culture/实用知识与技能/10.md
+          - 人际交往中的沟通艺术: culture/实用知识与技能/11.md
+          - 爱情与婚姻: culture/实用知识与技能/12.md
+      - 美学与艺术欣赏:
+          - 茶道: culture/美学与艺术欣赏/1.md
+          - 声乐基础知识: culture/美学与艺术欣赏/2.md
+          - 民族民间舞: culture/美学与艺术欣赏/3.md
+          - 京剧基本功: culture/美学与艺术欣赏/4.md
+          - 综合乐理知识: culture/美学与艺术欣赏/5.md
+          - 声乐初阶: culture/美学与艺术欣赏/6.md
+          - 中国篆刻艺术: culture/美学与艺术欣赏/7.md
+          - 西方音乐概论: culture/美学与艺术欣赏/8.md
+          - 艺术概论: culture/美学与艺术欣赏/9.md
+          - 素描基础: culture/美学与艺术欣赏/10.md
+          - 色彩基础与实践: culture/美学与艺术欣赏/11.md
+          - 乐谱视唱: culture/美学与艺术欣赏/12.md
+          - 古风舞蹈: culture/美学与艺术欣赏/13.md
+          - 艺术史: culture/美学与艺术欣赏/14.md
+          - 音乐基础及名作欣赏: culture/美学与艺术欣赏/15.md
+          - 舞蹈基础与欣赏: culture/美学与艺术欣赏/16.md
+          - 中国古代工艺美术欣赏: culture/美学与艺术欣赏/17.md
+          - 钢琴艺术鉴赏: culture/美学与艺术欣赏/18.md
+          - 中国古代音乐史中的古琴艺术: culture/美学与艺术欣赏/19.md
+      - 政治经济社会与法律:
+          - 威海历史寻迹: culture/政治经济社会与法律/1.md
+          - 以案说法: culture/政治经济社会与法律/2.md
+          - 管理学的邀请: culture/政治经济社会与法律/3.md
+          - 生活中的金融学: culture/政治经济社会与法律/4.md
+          - 社会语言学概述: culture/政治经济社会与法律/5.md
+          - 生活中的法律: culture/政治经济社会与法律/6.md
+          - 向人民军队学习领导力: culture/政治经济社会与法律/7.md
+          - 文化人类学专题: culture/政治经济社会与法律/8.md
+          - 公共经济学(财政学): culture/政治经济社会与法律/9.md
+          - 国家税收: culture/政治经济社会与法律/10.md
+      - 管理学:
+          - 组织行为学与团队建设: culture/管理学/1.md
+      - 自然科学与工程技术:
+          - 材料与人类文明: culture/自然科学与工程技术/1.md
+          - 生命科学与伦理: culture/自然科学与工程技术/2.md
+          - 从量子到宇宙: culture/自然科学与工程技术/3.md
+          - 生命科学热点趣谈: culture/自然科学与工程技术/4.md
+          - 遗传学与社会: culture/自然科学与工程技术/5.md
+          - 相对论与时空: culture/自然科学与工程技术/6.md
+          - 生物进化与生物多样性: culture/自然科学与工程技术/7.md
+          - 认识海洋: culture/自然科学与工程技术/8.md
+          - 物理学与社会: culture/自然科学与工程技术/9.md
   - 计算机专业课:
-    - 介绍: major/index.md
+      - 介绍: major/index.md
   - 实验室:
     - 介绍: labs/index.md
   - 计算机竞赛:
@@ -26,16 +92,18 @@ nav:
     - 介绍: CTF-WP/index.md
   
 
+
 copyright: Copyright &copy; 2024-2024 第五空间网络空间安全俱乐部
 theme:
-  name: 'material'
-  language: 'zh'
-  logo: image/logo.png
+  name: "material"
+  language: "zh"
+  # logo: images/icon.png
   icon:
     logo: material/notebook-outline
     repo: fontawesome/brands/github
     edit: material/pencil
-  favicon: image/logo.png
+  #custom_dir: overrides
+  favicon: images/favicon.png
   features:
     - content.code.annotate
     - content.action.edit
@@ -71,8 +139,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -81,7 +149,7 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
-      
+
 extra_css:
   - https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i&display=fallback
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
@@ -91,4 +159,3 @@ extra_javascript:
   - javascripts/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
-  
