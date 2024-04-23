@@ -66,10 +66,10 @@ mkdocs serve
 
 - 在 GitHub 网页端点击右上角的 fork，将本仓库 fork 到自己的账号下
 - 在自己账号的对应仓库中进行修改（提交方式参见git使用）
-- 修改完成后，在自己的仓库内Pull requests中 点击 New pull request，提交一个 PR
-- ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221056918.png)
-- ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221057922.png)
-
+- 修改完成后，在自己的仓库内Pull requests中 点击 New pull request，创建一个 PR
+![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221056918.png)
+- 填写详细的更新内容，然后提交 PR
+![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221057922.png)
 - 等待管理员的审核、修改，然后合并到本 repo 中
 
 ## 项目规划
