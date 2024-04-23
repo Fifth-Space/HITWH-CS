@@ -18,6 +18,7 @@ nav:
     - 介绍: labs/index.md
   - 计算机竞赛:
     - 介绍: competition/index.md
+    - 算法竞赛: competition/哈v算法竞赛指北.md
   - 分享会:
     - 介绍: salon/index.md
     - 20240204: salon/线性代数在计算机的一些应用.md
