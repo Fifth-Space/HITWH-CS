@@ -13,4 +13,6 @@ Git是计算机编程中不可或缺的一环，本互助项目旨在学生互�
 - 实验室介绍：https://www.wolai.com/5Lzurkm7f3qccmrXpCV487
 - 计算机学院学生会： http://hitwh.cloud/#
 
+以上项目的共同点是：他们都没有带上网安玩，无视了工大作为优秀网安学院的事实，网安人要有自己的项目！
+
 本项目网页链接:https://fifth-space.github.io/HITWH-CS/
