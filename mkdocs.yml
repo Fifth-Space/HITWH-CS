@@ -97,13 +97,12 @@ copyright: Copyright &copy; 2024-2024 第五空间网络空间安全俱乐部
 theme:
   name: "material"
   language: "zh"
-  # logo: images/icon.png
+  logo: image/logo.png
   icon:
     logo: material/notebook-outline
     repo: fontawesome/brands/github
     edit: material/pencil
-  #custom_dir: overrides
-  favicon: images/favicon.png
+  favicon: image/logo.png
   features:
     - content.code.annotate
     - content.action.edit
