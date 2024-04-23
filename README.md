@@ -5,6 +5,8 @@ Git是计算机编程中不可或缺的一环，本互助项目旨在学生互�
 
 同时本项目无任何不良引导，表达内容仅字面含义，没有任何引战等争议话题，如果发现将对 merge 进行撤回或者内容上删除
 
+项目创建人员与初始参与人员均饮水思源爱国荣校，牢记规格严格功夫到家的校训文化。
+
 校内其他类似项目：
 
 - 紫丁香书院科创部：https://c0oiv7e349q.feishu.cn/wiki/SWVWwFivEitrtdkDlTicYBkznAh?fromScene=spaceOverview
