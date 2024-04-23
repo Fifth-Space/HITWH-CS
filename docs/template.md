@@ -3,7 +3,12 @@
 <span class="badge cs-badge">CS <专业基础/专业必修/专业选修></span>
 <span class="badge ai-badge">AI <专业基础/专业必修/专业选修></span>
 <span class="badge is-badge">IS <专业基础/专业必修/专业选修></span>
+<span class="badge se-badge">SE <专业基础/专业必修/专业选修></span>
+<span class="badge dx-badge">紫丁香 <专业基础/专业必修/专业选修></span>
 </div>
+> 请注意目录结构。
+>
+> 要想在右侧渲染出目录 必须仅有一个一级标题或者从二级标题往下书写
 
 ## 课程学习内容
 
@@ -29,9 +34,9 @@
     === "<教师1>"
 
         <授课方式（如是否双语、板书/PPT/其他）、授课水平、给分情况等>
-
+    
     === "<教师2>" 
-
+    
         <授课方式（如是否双语、板书/PPT/其他）、授课水平、给分情况等>
     ```
     注意教师左右的引号，以及段落内容要全部缩进 4 空格。

@@ -1,11 +1,13 @@
 site_name: HITWH-CS
 nav:
   - 主页:
-      - index.md
+      - 项目介绍: index.md
       - 课程模版: template.md
       - 贡献指南: manual.md
   - 通识课:
-      - 介绍: general/index.md
+    - 介绍: general/index.md 
+  - 外专业选修课:
+    - 介绍: outer/index.md
   - 数理基础课:
       - 介绍: basic/index.md
   - 文化素质课:
@@ -79,11 +81,17 @@ nav:
   - 计算机专业课:
       - 介绍: major/index.md
   - 实验室:
-      - 介绍: labs/index.md
+    - 介绍: labs/index.md
+  - 计算机竞赛:
+    - 介绍: competition/index.md
+    - 算法竞赛: competition/哈v算法竞赛指北.md
   - 分享会:
-      - 介绍: salon/index.md
+    - 介绍: salon/index.md
+    - 20240204: salon/线性代数在计算机的一些应用.md
   - CTF-WP:
-      - 介绍: CTF-WP/index.md
+    - 介绍: CTF-WP/index.md
+  
+
 
 copyright: Copyright &copy; 2024-2024 第五空间网络空间安全俱乐部
 theme:
