@@ -10,6 +10,8 @@ nav:
     - 介绍: outer/index.md
   - 数理基础课:
       - 介绍: basic/index.md
+      - 微积分（1）: basic/calculus(1).md
+      - 代数与几何: basic/lin-algebra.md
   - 文化素质课:
       - 介绍: culture/index.md
       - 文史哲经典与世界文明:
@@ -80,6 +82,7 @@ nav:
           - 物理学与社会: culture/自然科学与工程技术/9.md
   - 计算机专业课:
       - 介绍: major/index.md
+      - 高级语言程序设计: major/C programming.md
   - 实验室:
     - 介绍: labs/index.md
   - 计算机竞赛:
