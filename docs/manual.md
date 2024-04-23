@@ -68,7 +68,7 @@ mkdocs serve
 
 通过**两次** PR（即 Pull Request）的形式来进行贡献，具体流程：
 
-- 在 GitHub 网页端点击右上角的 fork，将本仓库 fork 到自己的账号下
+- 在 GitHub 网页端点击右上角的 fork，将本仓库的 **main** 分支 fork 到自己的账号下
 
 - 在自己账号的对应仓库中进行修改（提交方式参见git使用）
 
@@ -81,6 +81,8 @@ mkdocs serve
   > 第一次提交占一下mkdocs.yml的坑位，这样避免merge冲突
   >
   > 第二次提交就在docs提交你的markdown
+  >
+  > 请务必确认分支正确
 
   ![image.png](https://cdn.jsdelivr.net/gh/wandering-the-earth/blog-img//blog/202404221056918.png)
 
