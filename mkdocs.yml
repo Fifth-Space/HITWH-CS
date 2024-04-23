@@ -83,7 +83,7 @@ nav:
   - 计算机专业课:
       - 介绍: major/index.md
       - 高级语言程序设计: major/C programming.md
-      - C++语言程序设计: major/C++.md
+      - C++程序设计: major/C++.md
   - 实验室:
     - 介绍: labs/index.md
   - 计算机竞赛:
