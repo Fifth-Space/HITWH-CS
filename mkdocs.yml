@@ -120,12 +120,23 @@ theme:
     # text: Noto Serif SC
     code: JetBrains Mono
   palette:
-    - scheme: default
 
+    - scheme: default
+      toggle:
+        icon: material/lightbulb 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+        #accent: white
+   
 markdown_extensions:
   - toc:
       permalink: true
-      toc_depth: 4
+      toc_depth: 5
   - meta
   - def_list
   - attr_list
