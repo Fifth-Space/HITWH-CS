@@ -3,9 +3,13 @@ nav:
   - 主页:
       - 项目介绍: index.md
       - 课程模版: template.md
+      - 实验室模板: lab-template.md
       - 贡献指南: manual.md
   - 通识课:
     - 介绍: general/index.md 
+    - 习近平新时代中国特色社会主义思想概论: general/newthoughts.md
+    - 思想道德与法治: general/ideology.md
+    - 计算思维与信息基础: general/computhinking.md
   - 外专业选修课:
     - 介绍: outer/index.md
   - 数理基础课:
