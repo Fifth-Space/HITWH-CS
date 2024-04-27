@@ -91,6 +91,9 @@ nav:
   - 创新创业课:
       - 介绍: innovation/index.md
       - 面向问题的高级程序设计: innovation/1.md
+      - 网络攻防实践: innovation/2.md
+      - 方班演武堂: innovation/3.md
+
   - 实验室:
     - 介绍: labs/index.md
   - 计算机竞赛:
@@ -101,6 +104,8 @@ nav:
     - 20240204: salon/线性代数在计算机的一些应用.md
   - CTF-WP:
     - 介绍: CTF-WP/index.md
+  - 外部交流:
+    - 介绍: visit/index.md
   
 
 
