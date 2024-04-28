@@ -96,6 +96,7 @@ nav:
 
   - 实验室:
     - 介绍: labs/index.md
+    - 第五空间网络空间安全俱乐部: labs/fifthspace.md
   - 计算机竞赛:
     - 介绍: competition/index.md
     - 算法竞赛: competition/哈v算法竞赛指北.md
