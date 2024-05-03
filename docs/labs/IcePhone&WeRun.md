@@ -1,7 +1,7 @@
 # 威软冰峰实验室
-<div class="badges">
-<span class="badge tea-lab-badge">教师实验室</span>
-</div>
+
+
+
 
 ## 实验室简介
 
@@ -32,86 +32,79 @@ RTX4090一张、P40+P100 8卡GPU服务器、RH2288 V4服务器
 !!! note
     招新分为冬招和夏招，在纳新群中分配项目，大一从零开始，大二直接实战，由项目好坏筛选面试名单，面试有展示项目，阐述项目细节，理论知识问答等环节，建议提前准备。此条适用于以下所有方向
 
-### 威软前端
+=== "威软前端"
+    >看到这个充值跳过广告了吗，来我给你们秀一个！——宣讲会
 
-!!! quote
-    看到这个充值跳过广告了吗，来我给你们秀一个！——宣讲会
+    HTML
+    
+    超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
+    
+    CSS
+    
+    CSS （Cascading Style Sheets，层叠样式表），是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言
+    
+    JavaScript
+    
+    JavaScript 是 Web 的编程语言。
+    
+    VUE
+    
+    VUE是一套构建用户界面的渐进式框架。
 
-#### HTML
+=== "威软后端"
+    >来咱先看看大厂的后端工程师缺到啥程度了，月薪多少。你要知道这可是我们跟前端比最大的优势！——宣讲会
 
-超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
+    Java
 
-#### CSS
+    Java是一种高级程序设计语言
 
-CSS （Cascading Style Sheets，层叠样式表），是一种用来为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言
+    SQL
 
-#### JavaScript
+    SQL是用于访问和处理数据库的标准的计算机语言。
 
-JavaScript 是 Web 的编程语言。
+    Spring
 
-#### VUE
+    Spring is a popular and powerful Java framework that simplifies development, enhances productivity, and enables cloud-ready services.
 
-VUE是一套构建用户界面的渐进式框架。
+=== "威软小程序"
 
-### 威软后端
+    Uniapp
 
-!!! quote
-    来咱先看看大厂的后端工程师缺到啥程度了，月薪多少。你要知道这可是我们跟前端比最大的优势！——宣讲会
+    uni-app is a framework for developing all front-end applications using Vue.js, which can run on iOS, Android, Web, and various small programs.
 
-#### Java
+    WeUI
 
-Java是一种高级程序设计语言
+    WeUI 是一套同微信原生视觉体验一致的基础样式库
 
-#### SQL
+    >编者在台上讲小程序的时候摸了大鱼，小程序剩下的技术栈无法施工
 
-SQL是用于访问和处理数据库的标准的计算机语言。
+=== "冰峰安卓"
 
-#### Spring
+    >我们的一大优势就是答辩的时候可以直接拿着手机给评委老师现场体验。——宣讲会
 
-Spring is a popular and powerful Java framework that simplifies development, enhances productivity, and enables cloud-ready services.
+    Java
 
-### 威软小程序
+    甚至冰峰的大一第一次作业和后端是一起的
 
-#### Uniapp
+    Kotlin
 
-uni-app is a framework for developing all front-end applications using Vue.js, which can run on iOS, Android, Web, and various small programs.
+    Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言
 
-#### WeUI
+    Go
 
-WeUI 是一套同微信原生视觉体验一致的基础样式库
+    ~~还在Go还在Go还在Go~~
 
-!!! note
-    编者在台上讲小程序的时候摸了大鱼，小程序剩下的技术栈无法施工
+    Go 是一个开源的编程语言
 
-### 冰峰安卓
+    Flutter
 
-!!! quote
-    我们的一大优势就是答辩的时候可以直接拿着手机给评委老师现场体验。——宣讲会
-
-#### Java
-
-甚至冰峰的大一第一次作业和后端是一起的
-
-#### Kotlin
-
-Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言
-
-#### Go
-
-~~还在Go还在Go还在Go~~
-
-Go 是一个开源的编程语言
-
-#### Flutter
-
-Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。
-
-!!! quote
+    Flutter是谷歌的移动UI框架，可以快速在iOS和Android上构建高质量的原生用户界面。
+ 
     虽然最新的技术是Flutter，但我们依然推荐你从Java学起。推荐一本书——《第一行代码Android第二版》，因为它使用Java示范代码而第三版已经全面转向Kotlin了。——宣讲会
 
-### AI
+=== "AI"
 
-暂不面向本科生纳新
+    暂不面向本科生纳新
 
 ### 在宣讲会推荐的资源
 

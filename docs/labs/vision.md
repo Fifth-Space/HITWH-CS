@@ -1,7 +1,7 @@
 # 视觉计算与机器智能研究中心
-<div class="badges">
-<span class="badge tea-lab-badge">教师实验室</span>
-</div>
+
+
+
 
 ## 实验室简介
 
