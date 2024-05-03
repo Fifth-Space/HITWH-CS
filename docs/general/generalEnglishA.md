@@ -46,7 +46,7 @@ ps: 实质上视听说教程和新闻听力精讲完全可以在扫描二维码�
 
 电脑端：iTest爱考试
 
-网页端：批改网http://www.pigai.org
+网页端：批改网<a>http://www.pigai.org</a>
 
 ## 分数构成
 
