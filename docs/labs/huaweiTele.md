@@ -1,7 +1,7 @@
 # 华为数据通信创新实践基地
-<div class="badges">
-<span class="badge tea-lab-badge">教师实验室</span>
-</div>
+
+
+
 
 ## 实验室简介
 
