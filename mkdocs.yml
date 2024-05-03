@@ -98,6 +98,12 @@ nav:
   - 实验室:
     - 介绍: labs/index.md
     - 第五空间网络空间安全俱乐部: labs/fifthspace.md
+    - 冰峰&威软: labs/IcePhone&WeRun.md
+    - 跨媒体智能研究中心: labs/acrossMedia.md
+    - 华为数据通信创新实践基地: labs/huaweiTele.md
+    - 企业与服务智能计算研究中心: labs/enterprise.md
+    - 视觉计算与机器智能研究中心: labs/vision.md
+    - 网络技术研究所: labs/INET.md
   - 计算机竞赛:
     - 介绍: competition/index.md
     - 算法竞赛: competition/哈v算法竞赛指北.md
