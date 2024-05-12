@@ -109,6 +109,7 @@ nav:
   - 分享会:
     - 介绍: salon/index.md
     - 20240204: salon/线性代数在计算机的一些应用.md
+    - 20240502: salon/basic_sql_injection.md
   - CTF-WP:
     - 介绍: CTF-WP/index.md
   - 外部交流:
