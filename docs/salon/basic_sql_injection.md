@@ -1,5 +1,5 @@
-# less-1_basic_char
-## 基本流程
+## less-1_basic_char
+### 基本流程
 
 目标：获取数据库中所有用户名和密码
 
@@ -111,26 +111,26 @@ information_schema.columns 结构：
 | DOMAIN_SCHEMA            | nvarchar(128)  | 如果列是一种用户定义数据类型，那么该列是这种用户定义数据类型的创建者。否则，返回 NULL。 |
 | DOMAIN_NAME              | nvarchar(128)  | 如果列是一种用户定义数据类型，那么该列是这种用户定义数据类型的名称。否则，返回 NULL。 |
 
-# less-2_basic_num
-## 数字型
+## less-2_basic_num
+### 数字型
 
 其他步骤与 less-1 相同，只不过变成了数字型注入
 
-# less-3_basic_bracket
-## 括号闭合
+## less-3_basic_bracket
+### 括号闭合
 1. 先判断是字符型
 2. ?id=2' order by 3 --+后报错 check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by 3 -- ') LIMIT 0,1' at line 1 说明要用单引号和括号来闭合
 3. 其他步骤相同
 
-# less-4_basic_bracket2
-## 括号闭合
+## less-4_basic_bracket2
+### 括号闭合
 1. 字符型
 2. ?id=2' order by 3--+ 其中 order by 后面数字不管多大都没反应，说明闭合有问题
 3. 尝试把单引号改成双引号，出现报错：……use near 'order by 3-- ") LIMIT 0,1' at line 1说明应该用双引号加右括号进行闭合
 4. 后续步骤相同
 
-# less-5_extractvalue
-## 报错注入
+## less-5_extractvalue
+### 报错注入
 1. ?id=1' order by 100 --+ 报错 Unknown column '100' in 'order clause' 说明已经正确闭合了
 
 2. ?id=-1'  order by 3--+ 什么都不显示
@@ -190,8 +190,8 @@ substring(123456,4,3)
 
 
 
-# less-5_floor
-## 报错注入
+## less-5_floor
+### 报错注入
 
 相关函数：
 
@@ -246,8 +246,8 @@ select concat(username,"-",password) from users limit 0,1
 
 
 
-# less-6_updatexml
-## 报错注入
+## less-6_updatexml
+### 报错注入
 
 其实与 less-5 一样，只是用双引号闭合
 
@@ -273,8 +273,8 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 
 同样在 xpath 中第一位改为 ~ 用于报错
 
-# less-7_outfile
-## 文件注入
+## less-7_outfile
+### 文件注入
 
 1. ```sql
    SHOW VARIABLES LIKE '%secure%'
@@ -304,8 +304,8 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 
 
 
-# less-8_bool
-## 布尔盲注
+## less-8_bool
+### 布尔盲注
 
 适用于页面只有真值、假值两种情况。手工布尔盲注费时费力。
 
@@ -331,8 +331,8 @@ select updatexml('XML_document','Xpath_string','New_content') from xml
 
 8. 依此类推重复之前题目的方法
 
-# less-9_dnslog
-## DNSlog 渗透
+## less-9_dnslog
+### DNSlog 渗透
 
 DNSLog渗透是一种利用DNS（域名系统）协议进行攻击和信息收集的技术。其原理基于DNS协议的特性，即将域名解析为IP地址。攻击者可以创建一个恶意的DNS服务器，当受害者的计算机尝试解析特定的域名时，DNS服务器会记录请求，并将请求信息发送给攻击者，从而实现信息收集。
 
@@ -362,9 +362,9 @@ load_file() 既可以读取本机文件（看对方有没有放开这个权限�
 
 需要打开文件读写权限
 
-# less-9_dnslogsqlinj
+## less-9_dnslogsqlinj
 
-## 使用脚本 DnslogSqlinj
+### 使用脚本 DnslogSqlinj
 
 ```shell
 python2 dnslogSql.py -u "http://192.168.216.134/sqli-labs-php7/Less-9/?id=1' and ({})--+" --dbs
@@ -375,9 +375,9 @@ python2 dnslogSql.py -u "http://192.168.216.134/sqli-labs-php7/Less-9/?id=1' and
 
 过时的脚本，多年未维护，应该还是去用 sqlmap 比较好
 
-# less-9_time
+## less-9_time
 
-## 时间盲注
+### 时间盲注
 
 啥回显都没有，甚至没有真假值的区别，而网站会执行你写的代码，此时可以使用时间盲注
 
@@ -393,8 +393,8 @@ if(condition, True, False)
 
 条件式为真时执行 True 语句，条件式为假时执行 False 语句，从而达到判断的效果
 
-# less-11_post
-## post 注入
+## less-11_post
+### post 注入
 
 1. 用 burp suite 抓包查看提交信息
 
@@ -408,8 +408,8 @@ if(condition, True, False)
 
 5. 如果想获取数据库相关信息，在单引号和 # 之间进行 union 注入即可
 
-# less-18_uagent
-## 使用 Burp Suite 进行 Header Injection
+## less-18_uagent
+### 使用 Burp Suite 进行 Header Injection
 
 1. 首先我们需要争取到一个 username 和 password
 
@@ -429,17 +429,13 @@ if(condition, True, False)
    User-Agent: 1'or updatexml(1,concat('~',(select database())),3),2,3)#
    ```
 
-
-
-
-
-# less-19_referer
-## 使用 Burp Suite 进行 Header Injection
+## less-19_referer
+### 使用 Burp Suite 进行 Header Injection
 
 跟 less-18 几乎一样，只是注入位置从 user-agent 到了 referer
 
-# less-20_cookie
-## 使用 Burp Suite 进行 Header Injection
+## less-20_cookie
+### 使用 Burp Suite 进行 Header Injection
 
 ```php
 $cookee = $_COOKIE['uname'];
