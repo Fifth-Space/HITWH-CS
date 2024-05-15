@@ -110,6 +110,7 @@ nav:
     - 介绍: salon/index.md
     - 20240204: salon/线性代数在计算机的一些应用.md
     - 20240502: salon/basic_sql_injection.md
+    - 20240513p2: salon/0513/系数为±1的n次方程根在复平面的分布.md
   - CTF-WP:
     - 介绍: CTF-WP/index.md
   - 外部交流:
