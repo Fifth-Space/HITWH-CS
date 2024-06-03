@@ -16,6 +16,7 @@ nav:
       - 介绍: basic/index.md
       - 微积分（1）: basic/calculus(1).md
       - 代数与几何: basic/lin-algebra.md
+      - 集合论与图论: basic/discrete.md
   - 文化素质课:
       - 介绍: culture/index.md
       - 文史哲经典与世界文明:
@@ -88,6 +89,7 @@ nav:
       - 介绍: major/index.md
       - 高级语言程序设计: major/C programming.md
       - C++程序设计: major/C++.md
+      - 专业解读: major/manual.md
   - 创新创业课:
       - 介绍: innovation/index.md
       - 面向问题的高级程序设计: innovation/1.md
