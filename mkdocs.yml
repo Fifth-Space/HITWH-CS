@@ -161,7 +161,6 @@ theme:
         name: Switch to light mode
         #accent: white
 plugins:
-  - search
   - turing_contributors
   
 
