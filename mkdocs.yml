@@ -162,7 +162,7 @@ theme:
         #accent: white
 plugins:
   - turing_contributors
-  #only test
+  #only test url in plugins
   
 
 markdown_extensions:
