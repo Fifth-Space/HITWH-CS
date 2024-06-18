@@ -119,6 +119,8 @@ nav:
     - 介绍: visit/index.md
     - 山东大学（青岛）: visit/SDU.md
     - 哈尔滨工业大学（深圳）: visit/HITSZ.md
+  - 知识-技术:
+    - 介绍: knowledge/index.md
   
 
 
@@ -158,7 +160,11 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
         #accent: white
-   
+plugins:
+  - search
+  - turing_contributors
+  
+
 markdown_extensions:
   - toc:
       permalink: true
