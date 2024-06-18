@@ -106,7 +106,7 @@ nav:
     - 视觉计算与机器智能研究中心: labs/vision.md
     - 网络技术研究所: labs/INET.md
   - 计算机竞赛:
-    - 介绍: competition/index.md
+    - 介绍: √
     - 算法竞赛: competition/哈v算法竞赛指北.md
   - 分享会:
     - 介绍: salon/index.md
@@ -162,6 +162,7 @@ theme:
         #accent: white
 plugins:
   - turing_contributors
+  #only test
   
 
 markdown_extensions:
