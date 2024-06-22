@@ -9,14 +9,18 @@ nav:
     - 习近平新时代中国特色社会主义思想概论: general/newthoughts.md
     - 思想道德与法治: general/ideology.md
     - 计算思维与信息基础: general/computhinking.md
+    - 中国近现代史纲要: general/history.md
     - 通用英语A: general/generalEnglishA.md
+    - 英汉翻译入门: general/translation.md
   - 外专业选修课:
     - 介绍: outer/index.md
   - 数理基础课:
       - 介绍: basic/index.md
       - 微积分（1）: basic/calculus(1).md
+      - 微积分（2）: basic/calculus(2).md
       - 代数与几何: basic/lin-algebra.md
       - 集合论与图论: basic/discrete.md
+      - 大学物理: basic/physics.md
   - 文化素质课:
       - 介绍: culture/index.md
       - 文史哲经典与世界文明:
