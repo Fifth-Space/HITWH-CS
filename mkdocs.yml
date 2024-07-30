@@ -102,7 +102,8 @@ nav:
       - 面向问题的高级程序设计: innovation/1.md
       - 网络攻防实践: innovation/2.md
       - 方班演武堂: innovation/3.md
-
+      - 热管理材料: innovation/4.md
+      
   - 实验室:
     - 介绍: labs/index.md
     - 第五空间网络空间安全俱乐部: labs/fifthspace.md
