@@ -97,6 +97,7 @@ nav:
       - C++程序设计: major/C++.md
       - 专业解读: major/manual.md
       - 软件与社会: major/society.md
+      - 软工大连实训: major/Practical training.md
   - 创新创业课:
       - 介绍: innovation/index.md
       - 面向问题的高级程序设计: innovation/1.md
@@ -168,8 +169,8 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
         #accent: white
-plugins:
-  - turing_contributors
+#plugins:
+  #- turing_contributors
   #only test url in plugins
   
 
