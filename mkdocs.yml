@@ -169,8 +169,8 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
         #accent: white
-#plugins:
-  #- turing_contributors
+plugins:
+  - turing_contributors
   #only test url in plugins
   
 
