@@ -50,6 +50,17 @@ cd ..
 ```sh
 mkdocs serve
 ```
+
+不过上头这条适用性不强，若你是...
+```sh
+conda爱好者: 
+python -m mkdocs serve
+
+debian魔（或者别的什么魔）:
+alias python="python3"
+python -m mkdocs serve
+```
+
 - 之后即可通过浏览器访问 localhost:8000 预览网站
 
 

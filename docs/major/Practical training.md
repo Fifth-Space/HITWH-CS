@@ -19,6 +19,8 @@
 
 本实训课程为**基础与智能软件技术**方向的实训课程，主要内容就是教你一些机器学习和深度学习的知识，使用python进行数据处理，包括数据清洗，数据可视化，数据分析等，掌握pandas，numpy，matplotlib，sklearn等python数据处理库的使用。简单来说就是开局一张钢材参数表，接着就是*炼丹*，你的成绩也和模型预测偏差挂钩，总结来说是比较水的一门课
 
+<a>https://wesmckinney.com/book/</a>, believe me, you'll finally need this. ——VZstless
+
 
 ## 课程评价
 
