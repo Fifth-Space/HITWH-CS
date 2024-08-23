@@ -4238,8 +4238,18 @@
 </code></pre></div>
 在本地运行，确认无误后再进行推送
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdocs<span class="w"> </span>serve
-</code></pre></div>
-- 之后即可通过浏览器访问 localhost:8000 预览网站</p>
+</code></pre></div></p>
+<p>不过上头这条适用性不强，若你是...
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>conda爱好者:<span class="w"> </span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>python<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>serve
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>debian魔（或者别的什么魔）:
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>python<span class="w"> </span>-m<span class="w"> </span>mkdocs<span class="w"> </span>serve
+</code></pre></div></p>
+<ul>
+<li>之后即可通过浏览器访问 localhost:8000 预览网站</li>
+</ul>
 <h2 id="_5">贡献守则<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
 <li>对于课程请进行客观的评价，尽量不要带有主观色彩</li>
@@ -4283,15 +4293,15 @@
 <li>等待管理员的审核、修改，然后合并到本 repo 中，如必要将会联系提交者</li>
 </ul>
 <h2 id="_7">项目规划<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>general: 通识课
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>outer: 外专业选修课
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>basic: 数理基础课
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>culture：文化素质课
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>major：CS 专业类课程
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>labs：学校各个实验室的技术栈介绍和项目（包括老师的实验室）
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>competition：计算机竞赛相关
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>salon：俱乐部可公开的分享会文档
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>CTF-WP：俱乐部参加的CTF比赛题解
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>general: 通识课
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>outer: 外专业选修课
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>basic: 数理基础课
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>culture：文化素质课
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>major：CS 专业类课程
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>labs：学校各个实验室的技术栈介绍和项目（包括老师的实验室）
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>competition：计算机竞赛相关
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>salon：俱乐部可公开的分享会文档
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>CTF-WP：俱乐部参加的CTF比赛题解
 </code></pre></div>
 <h2 id="git">有关Git的使用<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
 <h3 id="git_1">git下载<a class="headerlink" href="#git_1" title="Permanent link">&para;</a></h3>
@@ -4304,12 +4314,12 @@
 <h3 id="git_2">Git的配置<a class="headerlink" href="#git_2" title="Permanent link">&para;</a></h3>
 <p>首先，要配置电脑的ssh key</p>
 <p>打开bash/cmd/powershell</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;&lt;email&gt;&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;&lt;email&gt;&quot;</span>
 </code></pre></div>
 <p>这个email应该对应你的github/gitee邮箱，事实上两个托管平台用一样的就行（事实上<code>-C</code>参数可以不添加</p>
 <p>敲三次回车一路到底就行（可以输入文件名/密码，但是不是必要的）</p>
 <p>这时候会在你的用户目录下的.ssh文件夹里生成一个id_rsa （私钥） id_rsa.pub（公钥），我们使用公钥</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>cat<span class="w"> </span>.ssh/id_rsa.pub
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>cat<span class="w"> </span>.ssh/id_rsa.pub
 </code></pre></div>
 <p>获取命令行输出的公钥内容，全部复制</p>
 <p>登陆github，进入到个人的Settings</p>
@@ -4318,7 +4328,7 @@
 <p>添加sshkey，直接粘贴刚刚的公钥就行，确认。</p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/cyan4run/cdn_img/img/202404230007096.png" /></p>
 <p>没什么问题的话一封邮件会发到你的邮箱告知你添加了这个公钥。现在，理论上你这台电脑就能连接到github了</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
 </code></pre></div>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/cyan4run/cdn_img/img/202404222337770.png" /></p>
 <blockquote>
@@ -4326,33 +4336,33 @@
 </blockquote>
 <p>接下来配置git</p>
 <p>还是在命令行（推荐用git的bash）</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;your_github_username&quot;</span><span class="w"> </span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;your_email&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;your_github_username&quot;</span><span class="w"> </span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;your_email&quot;</span>
 </code></pre></div>
 <p>其中用户名是你注册github的<strong>账号名字</strong></p>
 <p>邮箱是注册使用的<strong>邮箱</strong>，没什么问题就和上面公钥用的一样</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--list
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--list
 </code></pre></div>
 <p>可以看到自己的配置</p>
 <h3 id="_8">如何连接远程<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <h4 id="_9">本地项目到远程<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
 <p>在github中新建一个仓库，什么都不添加</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>init<span class="w"> </span><span class="c1">#初始化git 生成一个.git文件夹在当前目录,默认创建master分支</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1">#添加文件到暂存区，.代表所有文件</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit&quot;</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;your_ssh_url&gt;<span class="w"> </span><span class="c1">#建议使用ssh url,原因下面有讲</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span><span class="c1">#推送远程，以后用git push就行</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>init<span class="w"> </span><span class="c1">#初始化git 生成一个.git文件夹在当前目录,默认创建master分支</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1">#添加文件到暂存区，.代表所有文件</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit&quot;</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;your_ssh_url&gt;<span class="w"> </span><span class="c1">#建议使用ssh url,原因下面有讲</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span><span class="c1">#推送远程，以后用git push就行</span>
 </code></pre></div>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/cyan4run/cdn_img/img/202404222338011.png" /></p>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/cyan4run/cdn_img/img/202404222338838.png" /></p>
 <p>这样在github页面上你应该能看到你的添加的文件了</p>
 <h4 id="_10">远程项目到本地工作<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;http_url<span class="w"> </span>OR<span class="w"> </span>ssh_url&gt;
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">cd</span><span class="w"> </span>example<span class="w"> </span><span class="c1">#进入项目文件夹</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>git<span class="w"> </span>pull<span class="w"> </span><span class="c1">#每次开启你的工作前，检查是否是最新的</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span><span class="c1">#切换到master分支 在我们的站点 这个分支是main</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1">#添加文件到暂存区，.代表所有文件</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;http_url<span class="w"> </span>OR<span class="w"> </span>ssh_url&gt;
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nb">cd</span><span class="w"> </span>example<span class="w"> </span><span class="c1">#进入项目文件夹</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>git<span class="w"> </span>pull<span class="w"> </span><span class="c1">#每次开启你的工作前，检查是否是最新的</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>git<span class="w"> </span>checkout<span class="w"> </span>master<span class="w"> </span><span class="c1">#切换到master分支 在我们的站点 这个分支是main</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span><span class="c1">#添加文件到暂存区，.代表所有文件</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;your commit&quot;</span>
 </code></pre></div>
 <p>以上操作都是正常操作</p>
 <p>但是这时候推送，可能会遇到这样的问题：</p>
@@ -4360,15 +4370,15 @@
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/cyan4run/cdn_img/img/202404222338241.png" /></p>
 <p>这个时候实际上就是上文要使用ssh的问题</p>
 <p>解决办法如下</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span><span class="c1">#可以看到的确git remote现在是http url 因为clone用的http</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>git<span class="w"> </span>remote<span class="w"> </span>rm<span class="w"> </span>origin
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>git<span class="w"> </span>reamote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>git@github.com:cyan4run/example.git<span class="w"> </span><span class="c1">#添加ssh的远程</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span><span class="c1">#检查一下</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span><span class="c1">#可以看到的确git remote现在是http url 因为clone用的http</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>git<span class="w"> </span>remote<span class="w"> </span>rm<span class="w"> </span>origin
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>git<span class="w"> </span>reamote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>git@github.com:cyan4run/example.git<span class="w"> </span><span class="c1">#添加ssh的远程</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>git<span class="w"> </span>remote<span class="w"> </span>-v<span class="w"> </span><span class="c1">#检查一下</span>
 </code></pre></div>
 <p><img alt="" src="https://cdn.jsdelivr.net/gh/cyan4run/cdn_img/img/202404222338887.png" /></p>
 <p>然后愉快的推送到仓库</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span><span class="c1">#master是连接的远程分支，而在我们的站点中，这个分支是main</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>git<span class="w"> </span>push<span class="w"> </span><span class="c1">#第一次推送以后以后可以用这个</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master<span class="w"> </span><span class="c1">#master是连接的远程分支，而在我们的站点中，这个分支是main</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>git<span class="w"> </span>push<span class="w"> </span><span class="c1">#第一次推送以后以后可以用这个</span>
 </code></pre></div>
 <p>另外的解决办法是，用token替代你的密码，不介绍了，去setting添加就行</p>
 <h3 id="_11">关于多人协作<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
@@ -4404,7 +4414,7 @@
 </style>
 
 <div id="footer-wrapper">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg></span> 2024-04-23&emsp;&emsp;<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Contributors <span class="contributors"><a href="https://github.com/wandering-the-earth" title="wandering-the-earth" target="_blank"><img src="https://avatars.githubusercontent.com/u/110729642" alt="wandering-the-earth"></a><a href="https://github.com/cyan4run" title="cyan4run" target="_blank"><img src="https://avatars.githubusercontent.com/u/146336992" alt="cyan4run"></a></span></p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg></span> 2024-08-17&emsp;&emsp;<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> Contributors <span class="contributors"><a href="https://github.com/wandering-the-earth" title="wandering-the-earth" target="_blank"><img src="https://avatars.githubusercontent.com/u/110729642" alt="wandering-the-earth"></a><a href="https://github.com/cyan4run" title="cyan4run" target="_blank"><img src="https://avatars.githubusercontent.com/u/146336992" alt="cyan4run"></a><a href="https://github.com/VictorZhangAI" title="VictorZhangAI" target="_blank"><img src="https://avatars.githubusercontent.com/u/62747756" alt="VictorZhangAI"></a></span></p>
 </div>
 
 
