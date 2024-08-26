@@ -51,8 +51,10 @@
 
 ## 懒人包
 
-<a>https://www.overleaf.com/project</a>记得使用ACM/IEEE Template
+<a>http://debracollege.dspaces.org/bitstream/123456789/671/1/Introduction%20to%20the%20Theory%20of%20Computation_2013%20Sipser.pdf</a>正版在线课本
 
-<a>https://texdoc.org/serve/lshort-zh-cn.pdf/0</a>注：不要把字典当成书本啃食
+<a>https://www.overleaf.com/project</a>LaTeX在线编辑环境，记得使用ACM/IEEE Template
+
+<a>https://texdoc.org/serve/lshort-zh-cn.pdf/0</a>LaTeX参考资料，注：不要把字典当成书本啃食
 
 实际上这玩意儿根本没必要pia上来，但是笔者看见有个大兄弟用百度死活搜索不着血压高了。
