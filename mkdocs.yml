@@ -20,6 +20,7 @@ nav:
       - 微积分（2）: basic/calculus(2).md
       - 代数与几何: basic/lin-algebra.md
       - 集合论与图论: basic/discrete.md
+      - 数理逻辑与近世代数: basic/logic^modern.md
       - 大学物理: basic/physics.md
   - 文化素质课:
       - 介绍: culture/index.md
@@ -99,6 +100,7 @@ nav:
       - 软件与社会: major/society.md
       - 软工大连实训: major/Practical training.md
       - 形式语言与自动机: major/automata.md
+      - Java程序设计: major/java.md
   - 创新创业课:
       - 介绍: innovation/index.md
       - 面向问题的高级程序设计: innovation/1.md
