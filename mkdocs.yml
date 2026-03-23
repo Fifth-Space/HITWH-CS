@@ -99,6 +99,7 @@ nav:
       - 软件与社会: major/society.md
       - 软工大连实训: major/Practical training.md
       - 形式语言与自动机: major/automata.md
+      - 计算机系统设计与实现: major/Computer system design and implementation.md
   - 创新创业课:
       - 介绍: innovation/index.md
       - 面向问题的高级程序设计: innovation/1.md
